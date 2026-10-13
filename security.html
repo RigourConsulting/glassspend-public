@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand-logo">
-        <div class="brand-icon">GS</div>
+        <img src="assets/img/glassspend_icon.png" alt="GlassSpend Logo">
         <span>GlassSpend</span>
       </a>
       <nav class="main-nav" aria-label="Main Navigation">
@@ -46,12 +46,12 @@
       <h2>3. Data Protection in Transit and at Rest</h2>
       <ul>
         <li><strong>In Transit:</strong> All communication between the GlassSpend Android client and our backend APIs is strictly enforced via <strong>TLS 1.3</strong> with DNS pinning and strict certificate validation. Cleartext HTTP is disallowed at the operating system network security configuration level.</li>
-        <li><strong>At Rest:</strong> Temporary server payloads are encrypted using <strong>AES-256-GCM</strong> authenticated encryption. On Android, local databases are isolated within Android's sandboxed private app storage.</li>
+        <li><strong>At Rest:</strong> On Android, local databases and temporary scan files are isolated within Android's sandboxed private app storage. No raw bill documents or images are transmitted to external cloud servers in on-device capture mode.</li>
         <li><strong>Cryptographic Shredding:</strong> Prior to file deletion, temporary files are overwritten with zeros followed by cryptographically secure pseudo-random bytes to prevent data remanence on flash storage.</li>
       </ul>
 
-      <h2>4. Automated 24-Hour Ephemeral Lifespan</h2>
-      <p>Our backend employs an automated background retention sweeper. Any uploaded candidate files are marked for destruction upon user confirmation, and any unconfirmed abandoned uploads are automatically purged and shredded after <strong>24 hours</strong>.</p>
+      <h2>4. Ephemeral Lifespan &amp; Local Storage Shredding</h2>
+      <p>Under on-device capture mode, scan images and decoded bitmaps are retained only during the immediate extraction session. Temporary cache files are permanently overwritten with random bytes and shredded upon confirmation or cancellation.</p>
 
       <h2>5. Security Contact &amp; Enquiries</h2>
       <p>For any questions or enquiries regarding our data protection policies and technical architecture, please contact our engineering team at:</p>

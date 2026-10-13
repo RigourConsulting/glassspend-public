@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand-logo">
-        <div class="brand-icon">GS</div>
+        <img src="assets/img/glassspend_icon.png" alt="GlassSpend Logo">
         <span>GlassSpend</span>
       </a>
       <nav class="main-nav" aria-label="Main Navigation">
@@ -45,7 +45,7 @@
         <li>Review the confirmation dialog and tap <strong>Confirm Deletion</strong>.</li>
       </ol>
       <div class="callout">
-        <p><strong>Immediate Effect:</strong> Your local SQLite database is dropped and recreated, all active alarms and reminders are cancelled via Android AlarmManager, and any active cloud authentication tokens are revoked immediately.</p>
+        <p><strong>Immediate Effect:</strong> Your local SQLite database is dropped and recreated, all active alarms and reminders are cancelled via Android AlarmManager, and all local private storage is cryptographically shredded.</p>
       </div>
 
       <h2>3. Web Deletion Request Form (Without App Access)</h2>
@@ -59,7 +59,7 @@
 
       <h2>4. Data Retention Disclosures</h2>
       <ul>
-        <li><strong>Raw Bill Images:</strong> Raw bill images and scans processed on-device are never stored on our servers. Any temporary encrypted transit copies are permanently shredded within 24 hours.</li>
+        <li><strong>Raw Bill Images:</strong> Raw bill images and documents are processed locally on-device and never stored on remote servers. Temporary local capture files are shredded immediately upon candidate confirmation.</li>
         <li><strong>Billing &amp; Subscription Records:</strong> Google Play subscription purchase tokens and payment receipts are retained solely as required by Australian tax and accounting laws (Australian Taxation Office 5-year statutory requirement for financial records).</li>
         <li><strong>Local Cache:</strong> All temporary capture files are overwritten with random bytes (cryptographic shredding) prior to file deletion.</li>
       </ul>
