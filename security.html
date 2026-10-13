@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Security Architecture — GlassSpend</title>
-  <meta name="description" content="GlassSpend Security Architecture: Local-first data isolation, on-device OCR, AES-256-GCM encryption at rest, TLS 1.3 in transit, and zero bank credentials.">
+  <meta name="description" content="GlassSpend Security Architecture: Local-first data isolation, on-device OCR, sandboxed storage at rest, encrypted HTTPS in transit, and zero bank credentials.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
 </head>
@@ -30,7 +30,7 @@
   <main class="site-main">
     <article class="content-section">
       <h1>Security Architecture &amp; Threat Model</h1>
-      <p class="subtitle">Zero Credential Collection, On-Device Intelligence, and Cryptographic Shredding</p>
+      <p class="subtitle">Zero Credential Collection, On-Device Intelligence, and Secure Overwrite &amp; Deletion</p>
 
       <h2>1. The Zero-Credential Architecture</h2>
       <p>The core tenet of GlassSpend is that your external accounts remain private and separate:</p>
@@ -45,13 +45,13 @@
 
       <h2>3. Data Protection in Transit and at Rest</h2>
       <ul>
-        <li><strong>In Transit:</strong> All communication between the GlassSpend Android client and our backend APIs is strictly enforced via <strong>TLS 1.3</strong> with DNS pinning and strict certificate validation. Cleartext HTTP is disallowed at the operating system network security configuration level.</li>
-        <li><strong>At Rest:</strong> On Android, local databases and temporary scan files are isolated within Android's sandboxed private app storage. No raw bill documents or images are transmitted to external cloud servers in on-device capture mode.</li>
-        <li><strong>Cryptographic Shredding:</strong> Prior to file deletion, temporary files are overwritten with zeros followed by cryptographically secure pseudo-random bytes to prevent data remanence on flash storage.</li>
+        <li><strong>In Transit:</strong> All communication between the GlassSpend Android client and backend APIs uses standard encrypted HTTPS transport with operating-system certificate verification. Cleartext HTTP is disallowed at the operating system network security configuration level. (Note: Advanced techniques such as DNS pinning or custom certificate pinning are not asserted or enforced in the current client build).</li>
+        <li><strong>At Rest:</strong> On Android, local SQLite databases and temporary scan files are isolated within Android's sandboxed private app storage. No raw bill documents or images are transmitted to external cloud servers in on-device capture mode.</li>
+        <li><strong>Secure Overwrite &amp; Deletion:</strong> Prior to file deletion, temporary files are overwritten with zeros followed by random bytes before removal to minimise data remanence.</li>
       </ul>
 
-      <h2>4. Ephemeral Lifespan &amp; Local Storage Shredding</h2>
-      <p>Under on-device capture mode, scan images and decoded bitmaps are retained only during the immediate extraction session. Temporary cache files are permanently overwritten with random bytes and shredded upon confirmation or cancellation.</p>
+      <h2>4. Ephemeral Lifespan &amp; Local Storage Cleanup</h2>
+      <p>Under on-device capture mode, scan images and decoded bitmaps are retained only during the immediate extraction session. Temporary cache files are permanently overwritten with random bytes and deleted upon confirmation or cancellation.</p>
 
       <h2>5. Security Contact &amp; Enquiries</h2>
       <p>For any questions or enquiries regarding our data protection policies and technical architecture, please contact our engineering team at:</p>

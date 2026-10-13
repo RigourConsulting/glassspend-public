@@ -30,7 +30,7 @@
   <main class="site-main">
     <article class="content-section">
       <h1>Account &amp; Data Deletion Request</h1>
-      <p class="subtitle">Google Play Data Safety Disclosure &amp; Complete Household Data Shredding</p>
+      <p class="subtitle">Google Play Data Safety Disclosure &amp; Complete Household Data Deletion</p>
 
       <h2>1. Our Deletion Commitment</h2>
       <p>GlassSpend is built with privacy-first data autonomy. You have the absolute right to delete any individual bill, purchase receipt, service watch, or your complete account at any time. When you request data deletion, all associated records are permanently erased without hidden retention.</p>
@@ -45,7 +45,7 @@
         <li>Review the confirmation dialog and tap <strong>Confirm Deletion</strong>.</li>
       </ol>
       <div class="callout">
-        <p><strong>Immediate Effect:</strong> Your local SQLite database is dropped and recreated, all active alarms and reminders are cancelled via Android AlarmManager, and all local private storage is cryptographically shredded.</p>
+        <p><strong>Immediate Effect:</strong> Your local SQLite database is dropped and recreated, all active alarms and reminders are cancelled via Android AlarmManager, and all local temporary files are overwritten and deleted.</p>
       </div>
 
       <h2>3. Web Deletion Request Form (Without App Access)</h2>
@@ -59,9 +59,9 @@
 
       <h2>4. Data Retention Disclosures</h2>
       <ul>
-        <li><strong>Raw Bill Images:</strong> Raw bill images and documents are processed locally on-device and never stored on remote servers. Temporary local capture files are shredded immediately upon candidate confirmation.</li>
+        <li><strong>Raw Bill Images:</strong> Raw bill images and documents are processed locally on-device and never stored on remote servers. Temporary local capture files are deleted immediately upon candidate confirmation.</li>
         <li><strong>Billing &amp; Subscription Records:</strong> Google Play subscription purchase tokens and payment receipts are retained solely as required by Australian tax and accounting laws (Australian Taxation Office 5-year statutory requirement for financial records).</li>
-        <li><strong>Local Cache:</strong> All temporary capture files are overwritten with random bytes (cryptographic shredding) prior to file deletion.</li>
+        <li><strong>Local Cache:</strong> All temporary capture files are overwritten with random bytes prior to file deletion.</li>
       </ul>
     </article>
   </main>
