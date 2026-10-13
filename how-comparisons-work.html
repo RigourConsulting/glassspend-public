@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Comparisons Work — GlassSpend</title>
+  <meta name="description" content="Discover how GlassSpend calculates bill comparisons using deterministic maths, official AER reference data, and zero commercial retailer bias.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">GS</div>
+        <span>GlassSpend</span>
+      </a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-comparisons-work.html" class="active">How Comparisons Work</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <article class="content-section">
+      <h1>How Comparisons Work</h1>
+      <p class="subtitle">Deterministic Mathematics, Regulatory Benchmarks, and Complete Commercial Independence</p>
+
+      <h2>1. The Problem with Commercial Comparison Sites</h2>
+      <p>Most popular Australian comparison websites are marketing brokers. They are paid lucrative "referral fees" or ongoing commissions (often $100–$250 per switch) by utility and telecommunications companies. Inevitably, the "top deals" they recommend are limited to retailers who pay their commission fees, excluding cheaper community-owned or non-commission providers.</p>
+      <p><strong>GlassSpend takes zero retailer commissions.</strong> We do not sell leads, we do not rank providers based on advertising spend, and we do not receive kickbacks when you save money.</p>
+
+      <h2>2. Pure Deterministic Mathematics</h2>
+      <p>All calculations in GlassSpend are governed by reproducible, deterministic arithmetic. We never use generative AI to guess prices, round numbers unpredictably, or fabricate missing values:</p>
+      <ul>
+        <li><strong>Integer Minor Units:</strong> All currency amounts are handled in integer cents (e.g. 2,450 cents instead of floating-point $24.50), eliminating binary rounding errors.</li>
+        <li><strong>Exact Unit Rates:</strong> Energy comparisons compute exact daily supply charges multiplied by calendar days plus tiered usage rates (cents/kWh) based on your real meter history.</li>
+        <li><strong>No Synthetic Extrapolation:</strong> If your bill is missing usage data or meter readings, the comparison engine explicitly reports <strong>More Info Required</strong> rather than guessing.</li>
+      </ul>
+
+      <h2>3. Official Regulatory Source Data</h2>
+      <p>GlassSpend benchmarks retail energy offers against official public data from the <strong>Australian Energy Regulator (AER)</strong> and the <strong>Default Market Offer (DMO) / Victorian Default Offer (VDO)</strong> reference benchmarks.</p>
+      <ul>
+        <li><strong>Jurisdictions Covered:</strong> National Electricity Market (NEM) states — New South Wales (NSW), South East Queensland (QLD), South Australia (SA), Victoria (VIC), the Australian Capital Territory (ACT), and Tasmania (TAS).</li>
+        <li><strong>Jurisdictional Exclusions:</strong> Western Australia (WA) and the Northern Territory (NT) operate under separate state regulatory bodies (ERA WA and Utilities Commission NT) and are excluded from AER live monitoring feeds.</li>
+      </ul>
+
+      <h2>4. Explain My Bill Change Formulation</h2>
+      <p>When you scan two consecutive bills for the same household service, GlassSpend disaggregates the dollar difference into distinct physical and commercial drivers:</p>
+      <div class="callout">
+        <p>$$\text{Total Change} = \Delta\text{Consumption} + \Delta\text{Tariff Rate} + \Delta\text{Supply Charge} + \Delta\text{Period Length} + \Delta\text{Credits} + \text{Residual}$$</p>
+        <p><strong>Residual Honesty:</strong> If a portion of the variance cannot be cleanly itemised (e.g. unlisted stepped blocks or tax roundings), it is preserved as an unexplained residual rather than falsely attributed.</p>
+      </div>
+
+      <h2>5. Stay &amp; Save Factual Negotiation Scripts</h2>
+      <p>Instead of pressuring you into risky switches, GlassSpend generates structured negotiation scripts. These scripts cite exact published plan codes, reference price comparisons, and specific unit rate differences, empowering you to negotiate directly with your existing provider to match cheaper rates without switching friction.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="how-comparisons-work.html">How Comparisons Work</a>
+        <a href="security.html">Security</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a href="subscription-help.html">Subscription Help</a>
+        <a href="delete-data.html">Delete Account / Data</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="release-notes.html">Release Notes</a>
+      </div>
+      <div class="footer-disclaimer">
+        <p>&copy; 2026 Rigour Consulting Pty Ltd. Impartial cost intelligence for Australian consumers.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
