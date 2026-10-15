@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlassSpend — See right through your bills</title>
-  <meta name="description" content="GlassSpend is an independent, household-first personal cost intelligence tool. Pure mathematical verification, on-device document processing, and zero retailer commissions.">
+  <title>GlassSpend | See right through your bills</title>
+  <meta name="description" content="GlassSpend helps Australians organise bills, understand recurring costs, track due dates and stay informed about changes in what they pay.">
+  <link rel="canonical" href="https://rigourconsulting.github.io/glassspend-public/">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+  <link rel="icon" type="image/png" href="assets/img/glassspend_icon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/img/glassspend_icon.png" alt="GlassSpend Logo">
-        <span>GlassSpend</span>
+      <a href="index.html" class="brand-logo" aria-label="GlassSpend Home">
+        <img src="assets/img/glassspend_icon.png" alt="GlassSpend icon">
+        <span class="brand-name"><span class="brand-glass">Glass</span><span class="brand-spend">Spend</span></span>
       </a>
-      <nav class="main-nav" aria-label="Main Navigation">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
           <li><a href="security.html">Security</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="support.html">Support</a></li>
+          <li><a href="subscription-help.html">Subscription Help</a></li>
         </ul>
       </nav>
     </div>
@@ -29,69 +31,94 @@
 
   <main class="site-main">
     <section class="hero">
-      <span class="badge-tag">Independent Cost Intelligence</span>
-      <h1>See right through your household bills.</h1>
-      <p class="subtitle" style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Android app in private testing / under local development &bull; iOS version planned</p>
-      <p class="tagline">Impartial bill tracking, exact deterministic maths, and factual negotiation scripts. No bank scraping. No retailer commissions. Never an automated switching service.</p>
+      <span class="badge-tag">Australian Personal Cost Intelligence</span>
+      <h1>See right through your bills.</h1>
+      <p class="tagline">GlassSpend helps Australians organise bills, understand recurring costs, track due dates and stay informed about changes in what they pay.</p>
       <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-        <a href="how-comparisons-work.html" class="btn">How It Works</a>
+        <a href="how-comparisons-work.html" class="btn">How Comparisons Work</a>
         <a href="privacy.html" class="btn btn-secondary">Our Privacy Commitment</a>
       </div>
     </section>
 
     <div class="cards-grid">
       <div class="card">
-        <h3>🔍 On-Device Document OCR</h3>
-        <p>Take a photo or import a PDF bill. Text recognition runs 100% locally on your phone. Your private bill images never leave your device.</p>
+        <h3>On-Device Document Capture</h3>
+        <p>Add bills by taking a photograph, importing a digital PDF, or entering details manually. Text recognition runs locally on your phone so your bill images remain private.</p>
       </div>
       <div class="card">
-        <h3>📊 Explain My Bill Change</h3>
-        <p>Understand exactly why your latest bill changed. We separate energy consumption shifts, rate rises, supply charges, and expired discounts with exact arithmetic.</p>
+        <h3>Review Extracted Values</h3>
+        <p>Review every extracted field before saving. You stay in control of your numbers, confirm providers, verify due dates, and correct ongoing service rates.</p>
       </div>
       <div class="card">
-        <h3>🤝 Stay &amp; Save Scripts</h3>
-        <p>Found a cheaper published plan with your current provider? Get a factual, polite negotiation script to copy into phone or chat conversations.</p>
+        <h3>Track Household Commitments</h3>
+        <p>Aggregate your recurring expenses into a single monthly equivalent view. Track active services across mobile, broadband, energy, water, and subscriptions.</p>
       </div>
       <div class="card">
-        <h3>⏰ Act Before Deadline</h3>
-        <p>Receive timely reminders before promotional credits or benefit periods expire, separated completely from optional marketing offers.</p>
+        <h3>Calendar &amp; Due Date Reminders</h3>
+        <p>Stay ahead of upcoming payments with an interactive schedule. Visualise due dates on a calendar grid and receive timely on-device notifications.</p>
       </div>
       <div class="card">
-        <h3>🇦🇺 Australian Truth in Pricing</h3>
-        <p>Australian dates (DD/MM/YYYY) and official public data from the Australian Energy Regulator (AER). No hidden commissions or biased rankings.</p>
+        <h3>Explain Bill Changes</h3>
+        <p>Understand why consecutive bills differ. We separate changes in consumption, unit rates, supply charges, and expired discounts using deterministic arithmetic.</p>
       </div>
       <div class="card">
-        <h3>🔒 Local-First &amp; Ephemeral</h3>
-        <p>Document photos and scans are processed locally on-device and securely overwritten and deleted immediately after review. You retain full data ownership at all times.</p>
+        <h3>Factual Negotiation Scripts</h3>
+        <p>Access structured negotiation points to discuss better rates with your existing supplier. We provide objective facts rather than automated switching.</p>
       </div>
     </div>
 
     <section class="content-section" style="margin-top: 40px;">
-      <h2>Built for honest household advocacy</h2>
-      <p>Household budgeting and bill management work best when consumers have transparent, unvarnished facts. We provide objective mathematical breakdowns so you can assess your true costs with clarity.</p>
-      <p>GlassSpend is independent: we do not accept retailer commissions, we do not switch your provider automatically, and we never ask for your online banking passwords or utility login credentials.</p>
+      <h2>Supported household categories</h2>
+      <p>GlassSpend is designed for everyday recurring household expenses. We support tracking and organising commitments across:</p>
+      <ul>
+        <li><strong>Mobile services:</strong> Postpaid and recurring SIM-only plans across major Australian telecommunications providers.</li>
+        <li><strong>Home internet and NBN:</strong> Fixed broadband statements, speed tiers, and bundled household connections.</li>
+        <li><strong>Electricity and natural gas:</strong> Retail energy accounts across National Electricity Market states (NSW, QLD, SA, VIC, ACT, and TAS).</li>
+        <li><strong>Water and council rates:</strong> Due date reminders and payment tracking for statutory utility supplies.</li>
+        <li><strong>Recurring subscriptions:</strong> Monthly streaming services, software licences, fitness memberships, and digital subscriptions.</li>
+        <li><strong>Replenishable household goods:</strong> Tracking staple consumable expenses and purchase receipts.</li>
+      </ul>
+
+      <h2>Impartial cost intelligence</h2>
+      <p>GlassSpend provides objective, mathematical breakdowns so you can assess your household commitments with clarity.</p>
+      <p>We do not accept retailer sales commissions, we do not switch your provider automatically, and we never request your online banking credentials or utility account passwords.</p>
       <div class="callout">
-        <p><strong>Pure mathematical verification:</strong> Potential savings are calculated down to the cent using published reference tariffs. Realised savings are recorded only after you confirm the outcome or subsequent bill evidence.</p>
+        <p><strong>Independent arithmetic:</strong> Comparison figures are computed down to the cent using published reference data from official regulatory bodies such as the Australian Energy Regulator. Bill tracking remains distinct from supplier-offer intelligence.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="how-comparisons-work.html">How Comparisons Work</a>
-        <a href="security.html">Security</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="support.html">Support</a>
-        <a href="subscription-help.html">Subscription Help</a>
-        <a href="delete-data.html">Delete Account / Data</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="release-notes.html">Release Notes</a>
+      <div class="footer-nav-grid">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
+            <li><a href="security.html">Security Architecture</a></li>
+            <li><a href="release-notes.html">Release Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Privacy</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="delete-data.html">Account &amp; Data Deletion</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Support &amp; FAQ</a></li>
+            <li><a href="subscription-help.html">Subscription Help</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-disclaimer">
-        <p>&copy; 2026 Rigour Consulting Pty Ltd. GlassSpend is an independent financial organisation and calculation tool. It does not provide credit, personal financial advice, or automated supplier switching.</p>
+        <p>&copy; 2026 Rigour Consulting Pty Ltd. GlassSpend is an independent cost organisation and calculation tool. It does not provide credit, financial advice, or automated supplier switching.</p>
       </div>
     </div>
   </footer>

@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support &amp; FAQ — GlassSpend</title>
-  <meta name="description" content="GlassSpend Customer Support, Frequently Asked Questions, supported bill categories, and troubleshooting guide.">
+  <title>Support and FAQ | GlassSpend</title>
+  <meta name="description" content="GlassSpend Customer Support, Frequently Asked Questions, supported bill categories, and troubleshooting guide for Australian households.">
+  <link rel="canonical" href="https://rigourconsulting.github.io/glassspend-public/support.html">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+  <link rel="icon" type="image/png" href="assets/img/glassspend_icon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/img/glassspend_icon.png" alt="GlassSpend Logo">
-        <span>GlassSpend</span>
+      <a href="index.html" class="brand-logo" aria-label="GlassSpend Home">
+        <img src="assets/img/glassspend_icon.png" alt="GlassSpend icon">
+        <span class="brand-name"><span class="brand-glass">Glass</span><span class="brand-spend">Spend</span></span>
       </a>
-      <nav class="main-nav" aria-label="Main Navigation">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
           <li><a href="security.html">Security</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="support.html" class="active">Support</a></li>
+          <li><a href="subscription-help.html">Subscription Help</a></li>
         </ul>
       </nav>
     </div>
@@ -29,63 +31,88 @@
 
   <main class="site-main">
     <article class="content-section">
-      <h1>Support &amp; FAQ</h1>
+      <h1>Support and FAQ</h1>
       <p class="subtitle">Help, troubleshooting, and supported household services</p>
 
-      <h2>Frequently Asked Questions</h2>
-      
+      <h2>Frequently asked questions</h2>
+
       <h3>1. Which bill formats and categories does GlassSpend support?</h3>
-      <p>GlassSpend supports scanned or photographed images (JPEG, PNG, WebP) and PDF invoices for:</p>
+      <p>GlassSpend supports photographs, image files (JPEG, PNG, WebP), and PDF digital invoices across:</p>
       <ul>
-        <li><strong>Electricity &amp; Natural Gas:</strong> Retail plans across NSW, QLD, SA, ACT, and TAS.</li>
-        <li><strong>Broadband &amp; NBN:</strong> Monthly internet statements, speed tiers, and bundled services.</li>
-        <li><strong>Mobile:</strong> Postpaid and recurring SIM-only plans from major Australian telcos.</li>
-        <li><strong>Streaming &amp; Subscriptions:</strong> Monthly entertainment and cloud subscription invoices.</li>
-        <li><strong>Council Rates &amp; Water:</strong> Due date and payment tracking (statutory monopoly supply).</li>
-        <li><strong>Purchase Receipts:</strong> Replenishable household goods and grocery items.</li>
+        <li><strong>Electricity and natural gas:</strong> Retail plans across NSW, QLD, SA, VIC, ACT, and TAS.</li>
+        <li><strong>Home internet and NBN:</strong> Monthly fixed broadband invoices, speed tiers, and bundled services.</li>
+        <li><strong>Mobile services:</strong> Postpaid and recurring SIM-only statements from Australian providers.</li>
+        <li><strong>Streaming and digital subscriptions:</strong> Monthly entertainment and cloud subscription statements.</li>
+        <li><strong>Council rates and water:</strong> Due date reminders and payment tracking for statutory utility supplies.</li>
+        <li><strong>Purchase receipts:</strong> Replenishable household goods and grocery receipts.</li>
       </ul>
 
-      <h3>2. Why didn't OCR detect my plan name automatically?</h3>
-      <p>Many Australian retail bills print the retailer's commercial marketing plan name on the second page or within small summary tables. When an exact plan name cannot be determined with complete confidence, GlassSpend honestly marks it as <strong>Unresolved Plan</strong> and prompts you to select or confirm it manually rather than guessing.</p>
+      <h3>2. Why was a field marked for review during bill scanning?</h3>
+      <p>Many Australian retail invoices present complex tables or print the plan name on secondary pages. When optical character recognition detects multiple possible numbers (for example, distinguishing between previous balance, new charges, and amount due), GlassSpend honestly flags the field for your review rather than guessing.</p>
 
-      <h3>3. Why does my energy watch say "Tracking" instead of "Live Monitoring"?</h3>
-      <p>In accordance with our Truth in Presentation policy, GlassSpend only displays "Live Monitoring" when an active, continuous background worker has verified connectivity with an official public regulatory data feed. For manually synced accounts or regional jurisdictions outside the National Electricity Market (such as WA or NT), records are accurately labelled as <strong>Tracked items</strong>.</p>
+      <h3>3. Will GlassSpend switch my electricity or broadband provider automatically?</h3>
+      <p>No, never. GlassSpend is strictly an independent cost organisation and analysis tool. We generate factual negotiation scripts ("Stay &amp; Save") and provide official public plan benchmarks, but you retain full personal control over your contracts and provider relationships.</p>
 
-      <h3>4. Will GlassSpend switch my electricity or broadband provider automatically?</h3>
-      <p><strong>No, never.</strong> GlassSpend is strictly an independent cost intelligence and analysis tool. We generate factual negotiation scripts ("Stay &amp; Save") and provide official public plan references, but you retain 100% control over any contact or contracts with providers.</p>
-
-      <h2>Troubleshooting Common Issues</h2>
+      <h3>4. How do monthly equivalent calculations work?</h3>
+      <p>Recurring expenses are converted to consistent monthly equivalent amounts using deterministic arithmetic in integer minor units (cents):</p>
       <ul>
-        <li><strong>Document scanning tips:</strong> Ensure good overhead lighting and avoid heavy shadows when photographing paper bills. For multi-page PDF statements, the first two pages usually contain the key tariff blocks.</li>
-        <li><strong>Notifications not firing:</strong> Ensure battery optimisation is disabled for GlassSpend in Android Settings, allowing exact alarm delivery for bill due dates.</li>
+        <li>Weekly bills are multiplied by 52 and divided by 12.</li>
+        <li>Fortnightly bills are multiplied by 26 and divided by 12.</li>
+        <li>Quarterly bills are divided by 3.</li>
+        <li>Annual bills are divided by 12.</li>
       </ul>
 
-      <h2>Contact Support</h2>
-      <p>Our Melbourne-based support team is here to assist with any questions:</p>
+      <h3>5. How do I use the Calendar schedule?</h3>
+      <p>The Calendar screen presents an interactive monthly grid with coloured dots for payment obligations and personal notes. Tapping any date reveals scheduled bills and allows you to attach custom household reminders.</p>
+
+      <h2>Troubleshooting common questions</h2>
+      <ul>
+        <li><strong>Camera capture clarity:</strong> Ensure adequate lighting and hold your smartphone steady over the paper bill. Capture the full account summary table containing the provider logo, due date, and total amount due.</li>
+        <li><strong>Notification delivery:</strong> To ensure due date reminders sound reliably, verify that battery optimisation for GlassSpend is set to unrestricted or standard in Android system settings.</li>
+        <li><strong>Missing browser apps:</strong> If tapping a legal or support link does not open a page, ensure that an approved web browser (such as Chrome, Samsung Internet, or Firefox) is installed and enabled on your device.</li>
+      </ul>
+
+      <h2>Contact our support team</h2>
+      <p>Our Australian-based support team is available to assist with any questions or technical enquiries:</p>
       <div class="callout">
         <p><strong>Email:</strong> <a href="mailto:support@rigourconsulting.com.au">support@rigourconsulting.com.au</a><br>
-        <strong>Hours:</strong> Monday to Friday, 9:00 AM – 5:00 PM AEST<br>
-        <strong>Response Time:</strong> Within 1 business day</p>
+        <strong>Hours:</strong> Monday to Friday, 9:00 AM to 5:00 PM AEST<br>
+        <strong>Response time:</strong> We aim to respond within 1 business day.</p>
       </div>
     </article>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="how-comparisons-work.html">How Comparisons Work</a>
-        <a href="security.html">Security</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="support.html">Support</a>
-        <a href="subscription-help.html">Subscription Help</a>
-        <a href="delete-data.html">Delete Account / Data</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="release-notes.html">Release Notes</a>
+      <div class="footer-nav-grid">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
+            <li><a href="security.html">Security Architecture</a></li>
+            <li><a href="release-notes.html">Release Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Privacy</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="delete-data.html">Account &amp; Data Deletion</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Support &amp; FAQ</a></li>
+            <li><a href="subscription-help.html">Subscription Help</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-disclaimer">
-        <p>&copy; 2026 Rigour Consulting Pty Ltd. GlassSpend support for Australian households.</p>
+        <p>&copy; 2026 Rigour Consulting Pty Ltd. GlassSpend customer assistance for Australian households.</p>
       </div>
     </div>
   </footer>

@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account &amp; Data Deletion — GlassSpend</title>
-  <meta name="description" content="Step-by-step instructions for deleting your GlassSpend account and wiping all associated household bill data, meeting Google Play Data Safety requirements.">
+  <title>Account and Data Deletion | GlassSpend</title>
+  <meta name="description" content="Step-by-step instructions for deleting your GlassSpend data and wiping stored household records, meeting Google Play Data Safety requirements.">
+  <link rel="canonical" href="https://rigourconsulting.github.io/glassspend-public/delete-data.html">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+  <link rel="icon" type="image/png" href="assets/img/glassspend_icon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/img/glassspend_icon.png" alt="GlassSpend Logo">
-        <span>GlassSpend</span>
+      <a href="index.html" class="brand-logo" aria-label="GlassSpend Home">
+        <img src="assets/img/glassspend_icon.png" alt="GlassSpend icon">
+        <span class="brand-name"><span class="brand-glass">Glass</span><span class="brand-spend">Spend</span></span>
       </a>
-      <nav class="main-nav" aria-label="Main Navigation">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
           <li><a href="security.html">Security</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="support.html">Support</a></li>
+          <li><a href="subscription-help.html">Subscription Help</a></li>
         </ul>
       </nav>
     </div>
@@ -29,59 +31,79 @@
 
   <main class="site-main">
     <article class="content-section">
-      <h1>Account &amp; Data Deletion Request</h1>
-      <p class="subtitle">Google Play Data Safety Disclosure &amp; Complete Household Data Deletion</p>
+      <h1>Account and Data Deletion Request</h1>
+      <p class="subtitle">Google Play Data Safety Disclosure and Household Data Deletion</p>
 
-      <h2>1. Our Deletion Commitment</h2>
-      <p>GlassSpend is built with privacy-first data autonomy. You have the absolute right to delete any individual bill, purchase receipt, service watch, or your complete account at any time. When you request data deletion, all associated records are permanently erased without hidden retention.</p>
+      <h2>1. Our deletion commitment</h2>
+      <p>GlassSpend is engineered with local-first privacy autonomy. You have the full right to delete any individual bill, purchase receipt, service watch, or your complete data store at any time. When you request data deletion, all associated local records are permanently wiped.</p>
 
-      <h2>2. How to Delete Data Within the Android Application</h2>
-      <p>You can execute an immediate, unrecoverable local wipe directly inside the GlassSpend Android app:</p>
+      <h2>2. Local-first architecture (no external account required)</h2>
+      <p>GlassSpend does not require you to create an external consumer account, password, or third-party cloud login. Your records are stored in a sandboxed SQLite database on your device. Consequently, deleting your data does not require logging into an external web portal.</p>
+
+      <h2>3. How to delete data within the Android application</h2>
+      <p>You can execute an immediate local wipe directly inside the GlassSpend Android app:</p>
       <ol>
-        <li>Open the <strong>GlassSpend</strong> app on your Android device.</li>
-        <li>Tap the <strong>Settings</strong> icon in the navigation bar.</li>
-        <li>Scroll down to the <strong>Data &amp; Privacy</strong> section.</li>
-        <li>Tap <strong>Wipe Local Data &amp; Delete Account</strong>.</li>
-        <li>Review the confirmation dialog and tap <strong>Confirm Deletion</strong>.</li>
+        <li>Open the <strong>GlassSpend</strong> app on your Android smartphone or tablet.</li>
+        <li>Tap the <strong>Settings</strong> icon in the bottom navigation bar.</li>
+        <li>Scroll down to the <strong>Data Management</strong> card.</li>
+        <li>Tap <strong>Clear All Local Data</strong>.</li>
+        <li>Review the confirmation prompt and tap <strong>Clear Data</strong>.</li>
       </ol>
       <div class="callout">
-        <p><strong>Immediate Effect:</strong> Your local SQLite database is dropped and recreated, all active alarms and reminders are cancelled via Android AlarmManager, and all local temporary files are overwritten and deleted.</p>
+        <p><strong>Immediate effect:</strong> Your local SQLite database is cleared and recreated, all active reminders and alarms are cancelled via Android AlarmManager, and all temporary capture files are overwritten and unlinked.</p>
       </div>
 
-      <h2>3. Web Deletion Request Form (Without App Access)</h2>
-      <p>If you no longer have access to the mobile application or have uninstalled it, you can request full account deletion by emailing our automated privacy handler:</p>
+      <h2>4. Web deletion request (without app access)</h2>
+      <p>If you have uninstalled the application and wish to request deletion of any server-side diagnostic records, installation session keys, or subscription linkage records, contact our privacy team:</p>
       <div class="callout">
-        <p><strong>Send an email to:</strong> <a href="mailto:delete-account@rigourconsulting.com.au">delete-account@rigourconsulting.com.au</a><br>
-        <strong>Subject:</strong> GlassSpend Account Deletion Request<br>
-        <strong>Include:</strong> The email address associated with your GlassSpend account or Google Play receipt ID.<br>
-        <strong>Processing Time:</strong> Requests are processed within 48 hours, and a confirmation receipt is sent.</p>
+        <p><strong>Email:</strong> <a href="mailto:privacy@rigourconsulting.com.au">privacy@rigourconsulting.com.au</a><br>
+        <strong>Subject:</strong> GlassSpend Data Deletion Request<br>
+        <strong>Details to provide:</strong> Your Google Play purchase order number (GPA.XXXX-XXXX-XXXX-XXXXX) or your device installation identifier if known.<br>
+        <strong>Processing:</strong> Requests are processed within 2 business days and confirmed via email.</p>
       </div>
 
-      <h2>4. Data Retention Disclosures</h2>
+      <h2>5. Important note regarding subscriptions</h2>
+      <p>Clearing your local records or uninstalling the GlassSpend application does <strong>not</strong> automatically cancel an active Google Play subscription. To stop recurring subscription renewals, you must cancel your subscription through Google Play (see <a href="subscription-help.html">Subscription Help</a>).</p>
+
+      <h2>6. Data retention disclosures</h2>
       <ul>
-        <li><strong>Raw Bill Images:</strong> Raw bill images and documents are processed locally on-device and never stored on remote servers. Temporary local capture files are deleted immediately upon candidate confirmation.</li>
-        <li><strong>Billing &amp; Subscription Records:</strong> Google Play subscription purchase tokens and payment receipts are retained solely as required by Australian tax and accounting laws (Australian Taxation Office 5-year statutory requirement for financial records).</li>
-        <li><strong>Local Cache:</strong> All temporary capture files are overwritten with random bytes prior to file deletion.</li>
+        <li><strong>Raw bill images:</strong> Processed on-device and never stored on remote servers. Temporary capture files in cache are deleted immediately upon review confirmation.</li>
+        <li><strong>Subscription and financial records:</strong> Google Play transaction tokens and payment verification records are retained solely as required by Australian taxation and statutory record-keeping obligations (5-year statutory retention under Australian taxation law).</li>
       </ul>
     </article>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="how-comparisons-work.html">How Comparisons Work</a>
-        <a href="security.html">Security</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="support.html">Support</a>
-        <a href="subscription-help.html">Subscription Help</a>
-        <a href="delete-data.html">Delete Account / Data</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="release-notes.html">Release Notes</a>
+      <div class="footer-nav-grid">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
+            <li><a href="security.html">Security Architecture</a></li>
+            <li><a href="release-notes.html">Release Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Privacy</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="delete-data.html">Account &amp; Data Deletion</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Support &amp; FAQ</a></li>
+            <li><a href="subscription-help.html">Subscription Help</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-disclaimer">
-        <p>&copy; 2026 Rigour Consulting Pty Ltd. GlassSpend account deletion conforms with Google Play Data Safety standards.</p>
+        <p>&copy; 2026 Rigour Consulting Pty Ltd. GlassSpend data deletion conforms with Google Play Data Safety standards.</p>
       </div>
     </div>
   </footer>

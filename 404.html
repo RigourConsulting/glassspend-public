@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found — GlassSpend</title>
+  <title>Page Not Found | GlassSpend</title>
+  <meta name="description" content="The requested GlassSpend page could not be found.">
+  <link rel="canonical" href="https://rigourconsulting.github.io/glassspend-public/404.html">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+  <link rel="icon" type="image/png" href="assets/img/glassspend_icon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/img/glassspend_icon.png" alt="GlassSpend Logo">
-        <span>GlassSpend</span>
+      <a href="index.html" class="brand-logo" aria-label="GlassSpend Home">
+        <img src="assets/img/glassspend_icon.png" alt="GlassSpend icon">
+        <span class="brand-name"><span class="brand-glass">Glass</span><span class="brand-spend">Spend</span></span>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
@@ -27,9 +29,12 @@
 
   <main class="site-main">
     <section class="hero">
-      <h1>404 — Page Not Found</h1>
+      <h1>404: Page Not Found</h1>
       <p class="tagline">The page you were looking for could not be found or has moved.</p>
-      <a href="index.html" class="btn">Return to GlassSpend Home</a>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn">Return to GlassSpend Home</a>
+        <a href="support.html" class="btn btn-secondary">Contact Support</a>
+      </div>
     </section>
   </main>
 

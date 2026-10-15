@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — GlassSpend</title>
-  <meta name="description" content="GlassSpend Privacy Policy. Compliant with the Australian Privacy Principles (APPs). Strict on-device OCR processing, zero bank credential scraping, and zero data sales.">
+  <title>Privacy Policy | GlassSpend</title>
+  <meta name="description" content="GlassSpend Privacy Policy. Compliant with the Australian Privacy Principles. Strict on-device OCR processing, zero bank credentials, and local-first data storage.">
+  <link rel="canonical" href="https://rigourconsulting.github.io/glassspend-public/privacy.html">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+  <link rel="icon" type="image/png" href="assets/img/glassspend_icon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/img/glassspend_icon.png" alt="GlassSpend Logo">
-        <span>GlassSpend</span>
+      <a href="index.html" class="brand-logo" aria-label="GlassSpend Home">
+        <img src="assets/img/glassspend_icon.png" alt="GlassSpend icon">
+        <span class="brand-name"><span class="brand-glass">Glass</span><span class="brand-spend">Spend</span></span>
       </a>
-      <nav class="main-nav" aria-label="Main Navigation">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
           <li><a href="security.html">Security</a></li>
           <li><a href="privacy.html" class="active">Privacy</a></li>
           <li><a href="support.html">Support</a></li>
+          <li><a href="subscription-help.html">Subscription Help</a></li>
         </ul>
       </nav>
     </div>
@@ -30,60 +32,91 @@
   <main class="site-main">
     <article class="content-section">
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Effective Date: 13 October 2026 | Australian Privacy Principles (APPs) Compliant</p>
+      <p class="subtitle">Effective date: 16 October 2026 | Australian Privacy Principles (APPs)</p>
 
-      <h2>1. Our Privacy Philosophy</h2>
-      <p>GlassSpend is engineered on the principle that your household financial information belongs exclusively to you. We believe that personal cost intelligence should never come at the cost of your privacy or commercial profiling.</p>
+      <h2>1. Our privacy commitment</h2>
+      <p>GlassSpend is designed on the principle that your household financial information belongs exclusively to you. Personal cost organisation should never come at the expense of your privacy, personal security, or commercial profiling.</p>
 
-      <h2>2. What We Collect and How We Process It</h2>
-      <h3>2.1 On-Device Document OCR Processing</h3>
-      <p>When you scan a utility bill, broadband statement, or purchase receipt, document character recognition runs <strong>entirely on-device</strong> using local machine learning. <strong>Your raw document photos and image scans never leave your smartphone.</strong></p>
+      <h2>2. What information we process</h2>
 
-      <h3>2.2 Candidate Structured Information</h3>
-      <p>Only extracted text candidate fields (such as service provider name, billing cycle, stated dollar amounts, and due dates) are handled by the application. You are always prompted to review, edit, and confirm these values before they are recorded into your local household database.</p>
+      <h3>2.1 On-device document processing</h3>
+      <p>When you scan a paper bill or import a digital PDF, optical character recognition runs entirely on-device using local machine learning libraries. Your raw bill photographs and PDF documents are processed in local sandboxed storage and are never uploaded to remote servers for text extraction.</p>
 
-      <h3>2.3 What We Strictly Never Collect</h3>
+      <h3>2.2 Candidate structured fields</h3>
+      <p>Extracted values (such as provider names, billing cycles, stated dollar figures, and due dates) are surfaced as candidate fields for your review. You inspect, edit, and confirm these values before they are recorded into your local household database.</p>
+
+      <h3>2.3 Local-first data storage</h3>
+      <p>Your confirmed bills, payment dates, personal notes, and service watches are stored in a local SQLite database within the sandboxed application environment on your Android device. The application does not require you to create an external consumer account or log in with third-party social credentials.</p>
+
+      <h3>2.4 Temporary capture files</h3>
+      <p>Temporary image renders and cached capture files generated during the scanning process are overwritten with zeros and random bytes before being deleted upon confirmation or cancellation.</p>
+
+      <h3>2.5 Authorised cloud assistance</h3>
+      <p>If you choose to use optional cloud-assisted research features, outbound transmissions are restricted to an allowlist of minimised, non-identifying metadata (such as service category, state, 4-digit postcode, general usage tier, and non-identifying plan rate). We strictly reject personal identifiers, customer names, residential street addresses, phone numbers, email addresses, credit card numbers, and 10 or 11 digit meter identifiers (such as National Metering Identifiers or Meter Installation Registration Numbers).</p>
+
+      <h3>2.6 Google Play subscription verification</h3>
+      <p>If you purchase a GlassSpend Pro subscription, payment processing is handled directly by Google Play. Our backend receives a cryptographic purchase token to verify subscription validity and bind entitlement to an anonymous installation identifier. We do not receive or store your credit card or banking details.</p>
+
+      <h2>3. What we strictly never collect</h2>
       <ul>
-        <li><strong>No bank credentials or passwords:</strong> We never ask for your banking passwords, utility portal logins, or PIN numbers.</li>
-        <li><strong>No Consumer Data Right (CDR) banking feeds:</strong> We do not monitor or scrape your daily bank transaction history.</li>
-        <li><strong>No sale of personal data:</strong> We do not sell, rent, or share personal or financial information with third-party data brokers, insurers, or marketers.</li>
-        <li><strong>No retailer commissions:</strong> We do not track you to collect switching referral bounties.</li>
+        <li><strong>No bank credentials:</strong> We never request, collect, or store your internet banking usernames, passwords, or security codes.</li>
+        <li><strong>No Consumer Data Right (CDR) account feeds:</strong> We do not connect to or scrape your transactional bank feeds.</li>
+        <li><strong>No sale of personal data:</strong> We do not sell, rent, or trade household information with third-party data brokers, insurers, or marketers.</li>
+        <li><strong>No retailer switching bounties:</strong> We do not receive referral fees or commissions for switching your services.</li>
       </ul>
 
-      <h2>3. On-Device Storage &amp; Secure Overwrite-and-Delete</h2>
-      <p>Documents processed on-device are stored strictly in private, sandboxed application storage. Temporary scan files in the local app cache are <strong>overwritten and deleted immediately</strong> after candidate review and confirmation. No raw bill images or PDFs leave your device.</p>
+      <h2>4. Backups and data portability</h2>
+      <ul>
+        <li><strong>System-managed backups:</strong> Standard Android Auto Backup may back up application databases to your personal Google Drive in accordance with operating system settings and our configured backup rules.</li>
+        <li><strong>Manual encrypted export:</strong> You can export an encrypted backup file (protected by AES-256-GCM encryption with a password of your choice) or export your records in CSV format directly from Settings.</li>
+      </ul>
 
-      <h2>4. Your Data Rights &amp; Australian Consumer Law</h2>
+      <h2>5. Your data rights</h2>
       <p>In accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles:</p>
       <ul>
-        <li><strong>Right to Access &amp; Portability:</strong> You can export all your bill records, notes, and tracking data in standard CSV or JSON format at any time.</li>
-        <li><strong>Right to Rectification:</strong> You can edit or correct any bill record directly within the mobile application.</li>
-        <li><strong>Right to Deletion:</strong> You can delete any bill, watch, or your entire account with immediate, unrecoverable local wiping. See our <a href="delete-data.html">Account &amp; Data Deletion page</a>.</li>
+        <li><strong>Access and portability:</strong> You can view and export all your stored bill records at any time.</li>
+        <li><strong>Correction:</strong> You can edit any bill record or service detail directly within the mobile application.</li>
+        <li><strong>Deletion:</strong> You can clear all local records instantly using the "Clear All Local Data" button in Settings. For web-accessible deletion requests regarding installation tokens or server logs, see our <a href="delete-data.html">Account &amp; Data Deletion page</a>.</li>
       </ul>
 
-      <h2>5. Contact Our Privacy Officer</h2>
-      <p>If you have any questions, feedback, or complaints regarding our privacy practices, please contact us at:</p>
+      <h2>6. Contact our Privacy Officer</h2>
+      <p>If you have any questions, feedback, or complaints regarding our privacy practices, please contact our team:</p>
       <div class="callout">
-        <p><strong>Privacy Officer — Rigour Consulting Pty Ltd</strong><br>
+        <p><strong>Privacy Officer, Rigour Consulting Pty Ltd</strong><br>
         Email: <a href="mailto:privacy@rigourconsulting.com.au">privacy@rigourconsulting.com.au</a><br>
-        Post: Level 14, 380 Bourke Street, Melbourne VIC 3000, Australia</p>
+        Address: Level 14, 380 Bourke Street, Melbourne VIC 3000, Australia</p>
       </div>
     </article>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="how-comparisons-work.html">How Comparisons Work</a>
-        <a href="security.html">Security</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="support.html">Support</a>
-        <a href="subscription-help.html">Subscription Help</a>
-        <a href="delete-data.html">Delete Account / Data</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="release-notes.html">Release Notes</a>
+      <div class="footer-nav-grid">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-comparisons-work.html">How Comparisons Work</a></li>
+            <li><a href="security.html">Security Architecture</a></li>
+            <li><a href="release-notes.html">Release Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Privacy</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="delete-data.html">Account &amp; Data Deletion</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Support &amp; FAQ</a></li>
+            <li><a href="subscription-help.html">Subscription Help</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-disclaimer">
         <p>&copy; 2026 Rigour Consulting Pty Ltd. GlassSpend adheres strictly to the Australian Privacy Principles.</p>
