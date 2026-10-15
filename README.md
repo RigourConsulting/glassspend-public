@@ -4,7 +4,7 @@
 **Official Public Website:** `https://rigourconsulting.github.io/glassspend-public/`  
 **Application:** GlassSpend (Android)  
 **Tagline:** See right through your bills.  
-**Publisher:** Rigour Consulting Pty Ltd (Melbourne VIC, Australia)
+**Publisher:** Rigour Consulting Pty Ltd (Perth WA, Australia)
 
 ---
 
@@ -13,10 +13,6 @@
 This repository contains the authoritative, static HTML public information website for **GlassSpend**, an independent Australian personal cost organisation and bill management application.
 
 It hosts required consumer transparency documents, legal policies, data deletion guides, and support resources for Australian consumers and the Google Play Store.
-
-> [!CAUTION]
-> **Strict Governance Warning for Maintainers:**  
-> This is a public repository. Under no circumstances should private Android source code, keystores, signing keys, API credentials, customer documents, test fixtures, or personal financial data be committed or pushed to this repository.
 
 ---
 
@@ -87,7 +83,8 @@ This site is deployed to GitHub Pages directly from the `main` branch.
 ## 5. Contact & Support
 
 - **General & Technical Support:** `support@rigourconsulting.com.au`
+- **Direct Contact:** `rigour.colsulting@gmail.com`
 - **Privacy & Data Protection:** `privacy@rigourconsulting.com.au`
 - **Engineering Security:** `security@rigourconsulting.com.au`
 - **Accessibility Inquiries:** `accessibility@rigourconsulting.com.au`
-- **Publisher:** Rigour Consulting Pty Ltd, Level 14, 380 Bourke Street, Melbourne VIC 3000, Australia
+- **Publisher:** Rigour Consulting Pty Ltd, Perth WA, Australia
