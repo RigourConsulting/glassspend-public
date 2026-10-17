@@ -82,9 +82,5 @@ This site is deployed to GitHub Pages directly from the `main` branch.
 
 ## 5. Contact & Support
 
-- **General & Technical Support:** `support@rigourconsulting.com.au`
-- **Direct Contact:** `rigour.colsulting@gmail.com`
-- **Privacy & Data Protection:** `privacy@rigourconsulting.com.au`
-- **Engineering Security:** `security@rigourconsulting.com.au`
-- **Accessibility Inquiries:** `accessibility@rigourconsulting.com.au`
+- **General, Technical & Privacy Inquiries:** `rigour.consulting@gmail.com`
 - **Publisher:** Rigour Consulting Pty Ltd, Perth WA, Australia

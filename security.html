@@ -32,7 +32,7 @@
   <main class="site-main">
     <article class="content-section">
       <h1>Security Architecture and Threat Model</h1>
-      <p class="subtitle">Zero Credential Collection, On-Device Intelligence, and Secure Overwrite and Deletion</p>
+      <p class="subtitle">Zero Credential Collection, On-Device Intelligence, and Local Storage Isolation</p>
 
       <h2>1. The zero-credential architecture</h2>
       <p>The core tenet of GlassSpend is that your external accounts remain private and separate:</p>
@@ -49,17 +49,17 @@
       <ul>
         <li><strong>In transit:</strong> All communication between the GlassSpend Android client and backend APIs uses standard encrypted HTTPS transport with operating system certificate verification. Cleartext HTTP is disallowed at the operating system network security configuration level. (Note: Advanced techniques such as DNS pinning or custom certificate pinning are not asserted or enforced in the current client build).</li>
         <li><strong>At rest:</strong> On Android, local SQLite databases and temporary scan files are isolated within Android's sandboxed private app storage. No raw bill documents or images are transmitted to external cloud servers in on-device capture mode.</li>
-        <li><strong>Secure overwrite and deletion:</strong> Prior to file deletion, temporary files are overwritten with zeros followed by random bytes before removal to minimise data remanence.</li>
+        <li><strong>Sandboxed cache deletion:</strong> Temporary capture files are deleted from Android sandboxed application storage immediately upon confirmation or cancellation, with an automated 24-hour purge backstop.</li>
       </ul>
 
       <h2>4. Ephemeral lifespan and local storage cleanup</h2>
-      <p>Under on-device capture mode, scan images and decoded bitmaps are retained only during the immediate extraction session. Temporary cache files are permanently overwritten with random bytes and deleted upon confirmation or cancellation.</p>
+      <p>Under on-device capture mode, scan images and decoded bitmaps are retained only during the immediate extraction session. Temporary cache files are deleted from sandboxed application storage immediately upon confirmation or cancellation.</p>
 
       <h2>5. Security contact and enquiries</h2>
       <p>For any questions or enquiries regarding our data protection policies and technical architecture, contact our engineering team:</p>
       <div class="callout">
         <p><strong>Engineering Security and Compliance, Rigour Consulting Pty Ltd</strong><br>
-        Email: <a href="mailto:security@rigourconsulting.com.au">security@rigourconsulting.com.au</a></p>
+        Email: <a href="mailto:rigour.consulting@gmail.com">rigour.consulting@gmail.com</a></p>
       </div>
     </article>
   </main>

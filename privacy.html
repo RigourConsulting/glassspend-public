@@ -49,7 +49,7 @@
       <p>Your confirmed bills, payment dates, personal notes, and service watches are stored in a local SQLite database within the sandboxed application environment on your Android device. The application does not require you to create an external consumer account or log in with third-party social credentials.</p>
 
       <h3>2.4 Temporary capture files</h3>
-      <p>Temporary image renders and cached capture files generated during the scanning process are overwritten with zeros and random bytes before being deleted upon confirmation or cancellation.</p>
+      <p>Temporary image renders and cached capture files generated during the scanning process are deleted from sandboxed application cache immediately upon confirmation or cancellation, with an automated 24-hour purge backstop.</p>
 
       <h3>2.5 Authorised cloud assistance</h3>
       <p>If you choose to use optional cloud-assisted research features, outbound transmissions are restricted to an allowlist of minimised, non-identifying metadata (such as service category, state, 4-digit postcode, general usage tier, and non-identifying plan rate). We strictly reject personal identifiers, customer names, residential street addresses, phone numbers, email addresses, credit card numbers, and 10 or 11 digit meter identifiers (such as National Metering Identifiers or Meter Installation Registration Numbers).</p>
@@ -83,7 +83,7 @@
       <p>If you have any questions, feedback, or complaints regarding our privacy practices, please contact our team:</p>
       <div class="callout">
         <p><strong>Privacy Officer, Rigour Consulting Pty Ltd</strong><br>
-        Email: <a href="mailto:privacy@rigourconsulting.com.au">privacy@rigourconsulting.com.au</a> (Direct: <a href="mailto:rigour.colsulting@gmail.com">rigour.colsulting@gmail.com</a>)<br>
+        Email: <a href="mailto:rigour.consulting@gmail.com">rigour.consulting@gmail.com</a><br>
         Location: Perth WA, Australia</p>
       </div>
     </article>
